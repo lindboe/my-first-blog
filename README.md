@@ -14,7 +14,8 @@ Instead of following the directions in [Django Girls Tutorial
 Installation][installation], follow these setup instructions instead.
 
 1.  Install Docker Community Edition from the [Docker Store][]. Follow the
-    instructions for your specific operating system.
+    instructions for your specific operating system. If installing on Ubuntu,
+    see "Addtional notes for Ubuntu" section below.
 1.  Sign up for a free [GitHub][] account, if you don't have one already. If you
     do have an account, make sure you can login with your username and password.
 1.  Make a copy of this repo into your own account by [forking this repo][fork].
@@ -47,6 +48,16 @@ words, the `src/djangogirls` subdirectory in your home directory.
 works][internet]. Note some minor changes you'll have to keep in mind as you
 follow the tutorial.
 
+### Additional notes for Ubuntu
+
+* If you're installing Docker on Ubuntu 19.10 Eoan, in the command to add the
+  Docker repository to your system, change `$(lsb_release -cs)` to `disco`.
+  This is because Docker does not have official repositories for Eoan yet, so we
+  use the repository for the previous version (Disco).
+* Make sure to follow the `Manage Docker as a non-root user` steps in
+  [Post installation for Linux][] instructions, so that you can run docker
+  without `sudo`.
+* Make sure to also install [docker-compose][] before running `make cli`.
 
 ## Changes from the Tutorial
 
@@ -231,6 +242,7 @@ sessions.
 [Atom]: https://atom.io
 [Django installation]: https://tutorial.djangogirls.org/en/django_installation/
 [Docker Store]: https://store.docker.com/search?offering=community&type=edition
+[docker-compose]: https://docs.docker.com/compose/install/
 [GitHub]: https://github.com
 [IPython]: https://ipython.org
 [Python installation]: https://tutorial.djangogirls.org/en/python_installation/
@@ -248,5 +260,6 @@ sessions.
 [installation]: https://tutorial.djangogirls.org/en/installation/
 [internet]: https://tutorial.djangogirls.org/en/how_the_internet_works/
 [pa-account]: https://tutorial.djangogirls.org/en/installation/#create-a-pythonanywhere-account
+[Post installation for Linux]: https://docs.docker.com/install/linux/linux-postinstall/
 [tutorial]: https://tutorial.djangogirls.org/en
 [vsc]: https://code.visualstudio.com
