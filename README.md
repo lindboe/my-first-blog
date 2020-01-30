@@ -15,7 +15,8 @@ Installation][installation], follow these setup instructions instead.
 
 1.  Install Docker Community Edition from the [Docker Store][]. Follow the
     instructions for your specific operating system. If installing on Ubuntu,
-    see "Addtional notes for Ubuntu" section below.
+    use you can use the install-docker-ubuntu.sh script included in this
+    repository, or see "Addtional notes for Ubuntu" section below.
 1.  Sign up for a free [GitHub][] account, if you don't have one already. If you
     do have an account, make sure you can login with your username and password.
 1.  Make a copy of this repo into your own account by [forking this repo][fork].
