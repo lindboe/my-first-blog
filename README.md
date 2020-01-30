@@ -86,6 +86,8 @@ You'll instead see:
 root@app:~/src/djangogirls$
 ```
 
+You can leave the Docker container by entering the command `exit`.
+
 #### Run Django Web Server
 
 👉 Whenever you see mention of `python manage.py runserver`, use the following
@@ -97,6 +99,10 @@ make runserver
 
 This will start the Django web server in a container, and will behave exactly as
 described in the tutorial.
+
+If you get an error message, make sure that you're not still in the docker
+container after running `make cli`. If you are, you can either open a new
+command line tab to run `make runserver` in, or exit `make cli` with `exit`.
 
 ### Skip the Following Sections
 
